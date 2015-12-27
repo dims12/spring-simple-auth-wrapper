@@ -32,6 +32,8 @@ public class AuthenticationProviderEx implements AuthenticationProvider {
             authorities.add(new SimpleGrantedAuthority(role));
         }
 
+
+
         return new UsernamePasswordAuthenticationToken(username, password, authorities);
     }
 

@@ -21,10 +21,10 @@ public class MyAuthService {
    public List<String> roles(String username) {
 
       if( "user1".equals(username) ) {
-         return Arrays.asList("USER", "ADMIN");
+         return Arrays.asList("ROLE_USER", "ROLE_ADMIN");
       }
       else if ( "user2".equals(username) ) {
-         return Arrays.asList("USER");
+         return Arrays.asList("ROLE_USER");
       }
       else {
          return Arrays.asList(new String []{});
